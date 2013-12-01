@@ -6,7 +6,7 @@ $(document).ready(function() {
     var idn = id.charAt(id.length - 1);
     $.ajax({
         url: "http://tiendaapirest.aws.af.cm/api/canasta",
-        type: 'POST',
+        type: 'GET',
         data:{
             username: document.getElementById('username').innerText
         },
@@ -71,7 +71,7 @@ $(document).ready(function() {
         $("#comprar").on("submit", function(event) {
             event.preventDefault();
             $.ajax({
-                url: "http://localhost/APIRest/api/canasta/buy/",
+                url: "http://localhost/APIRest/api/canasta",
                 type: "POST",
                 beforeSend: function() {
 //                    NProgress.start();
@@ -88,7 +88,7 @@ $(document).ready(function() {
         $("#vaciar").on("submit", function(event) {
             event.preventDefault();
             $.ajax({
-                url: "http://localhost/APIRest/api/canasta/delete/",
+                url: "http://localhost/APIRest/api/canasta",
                 type: "DELETE",
                 beforeSend: function() {
 //                    NProgress.start();

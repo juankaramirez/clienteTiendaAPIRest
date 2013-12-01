@@ -26,7 +26,7 @@ $(document).ready(function() {
                 var prod5 = $("<div class='uk-width-medium-5-10 uk-container-center uk-margin-top'>").html("Precio: " + value.precio);
                 var prod6 = $("<div class='uk-width-medium-5-10 uk-margin-top'>").html("En Stock: " + value.existencia);
                 
-               if(document.getElementById('username').innerText === ''){
+				if(document.getElementById('username').innerText === ''){
 					var prod10='';
 					var prod11='';
 				}else{
@@ -35,8 +35,15 @@ $(document).ready(function() {
 					var prod11 = $("<div class='uk-form-row uk-maring-top'>").append($("<button class='uk-button uk-button-primary' 	type='submit'>").html("Comprar"));
 				}
                 
-                var prod7 = $("<div class='uk-push-3-10 uk-width-medium-1-1 uk-container-center uk-margin-top'>").append($("<form class = 'uk-form' role='form' id='canasta' method='POST'>").append($("<fieldset>").append(prod10).append(prod11)));
                 
+                var prod7 = $("<div class='uk-push-3-10 uk-width-medium-1-1 uk-container-center uk-margin-top'>").append($("<form class = 'uk-form' role='form' id='canasta' method='POST'>").append($("<fieldset>").append(prod10).append(prod11)));
+                //var prod8=  $("<input value='"+data.categ+"' style='visibility:hidden;' name='categoria' type='text' id='categoria' >");
+                //var prod9=  $("<input value='"+document.getElementById('username').innerHTML+"' style='visibility:hidden;' name='username' type='text' id='username'>");        
+                
+                //prod7.append(prod8);
+                //prod7.append(prod9);
+//                prod7.append(prod10);
+//                prod7.append(prod11);
                 
                 $("#principal").append(prod2.append(prod3.append(prod4.append(prod5).append(prod6).append(prod7))));
             });
@@ -96,7 +103,7 @@ $(document).ready(function() {
         $("#canasta").on("submit", function(event) {
             event.preventDefault();
             $.ajax({
-                url: "http://tiendaapirest.aws.af.cm/api/canasta/add",
+                url: "http://tiendaapirest.aws.af.cm/api/canasta",
                 type: "POST",
                 data: {
                     //categoria: $("#categoria").val(),
