@@ -9,12 +9,17 @@ require(["nprogress", "jquery"], function(NProgress) {
 					NProgress.start();
 				},
 				success: function(data) {
-					
+					var all;
 					$.each(data.categs, function(key, value) {
 						var tab = $("<li>");
+						var t2 = $("<li>");
 						tab.append($("<a href='productos_categoria.php?cat="+ value.id +"'>").html(value.nombre));
-						$("#catmenu").append(tab);
+						t2.append($("<a href='productos_categoria.php?cat="+ value.id +"'>").html(value.nombre));
+						$("#catmenu").append(t2);
+						$("#canvasmenu").append(tab);
+						
 					});
+
 					NProgress.done();
 				}
 			});
