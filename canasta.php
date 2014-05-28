@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="uikit/css/uikit.gradient.min.css" />
         <link rel="stylesheet" href="uikit/css/custom.css" />
         <link href="css/nprogress.css" rel="stylesheet" media="screen">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
          
         
         <title>Mini Tienda Online</title>

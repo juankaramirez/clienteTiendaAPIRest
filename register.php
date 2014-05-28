@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="uikit/css/uikit.gradient.min.css" />
         <link rel="stylesheet" href="uikit/css/custom.css" />
 		<link rel="stylesheet" href="css/nprogress.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Registro</title>
     </head>
     <body>
@@ -33,7 +34,7 @@
                                     <div class="uk-form-row">
                                         <label class="uk-form-label" >Usuario</label>
                                         <div class="uk-form-controls">
-                                            <input name="username" class="uk-form-width-medium" type="text" id="username" placeholder="Nombre" >
+                                            <input name="username" class="uk-form-width-medium" type="text" id="username" placeholder="Username" >
                                         </div>
                                     </div>
 									
@@ -47,7 +48,7 @@
 									<div class="uk-form-row">
                                         <label class="uk-form-label" >Apellido</label>
                                         <div class="uk-form-controls">
-                                            <input name="apellido" class="uk-form-width-medium" type="text" id="apellido" placeholder="Nombre" >
+                                            <input name="apellido" class="uk-form-width-medium" type="text" id="apellido" placeholder="Apellido" >
                                         </div>
                                     </div>
 									

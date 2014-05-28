@@ -10,21 +10,20 @@ session_start();
 		<link rel="stylesheet" href="css/nprogress.css" />
 	
         <link rel="stylesheet" href="uikit/css/custom.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Mini Tienda Online</title>
     </head>
     <body>
-
-        <div class="uk-grid">
-
+       
+			<!--<div class="uk-panel uk-panel-space">-->
             <div class="uk-width-1-1">
                 <div class="uk-margin-bottom">
-                <nav class="uk-navbar">
+                <nav class="uk-navbar uk-parent">
                     <ul class="uk-navbar-nav">
                         <li class="uk-active"><a href="">MINI TIENDA ONLINE</a></li>
                     </ul>
 
-
-                    <div class="uk-navbar-flip">
+					<div class="uk-navbar-flip">
 
                         <ul class="uk-navbar-nav">
                             <?php
@@ -51,16 +50,23 @@ session_start();
                             </li>
                         </ul>
                     </div>
-                    <div class="uk-navbar-content uk-navbar-center uk-hidden-small">
-                        <input type="text" placeholder="Buscar" class="uk-form-width-large" id="buscar">
+					
+					<div class="uk-navbar-center uk-navbar-content ">
+                       <input type="text" placeholder="Buscar" class="uk-responsive-width  uk-width-7-10  id="buscar">
                     </div>
+                    
+                    
                 </nav>
                
                 </div>
             </div>
-
-            <div class="uk-width-2-10">
-                <div class="uk-panel uk-panel-box uk-panel-header">
+		<div class="uk-panel uk-panel-space">
+			<div class="uk-grid">
+			<div class="uk-width-1-1 uk-margin-bottom"><a href="index.php" class="uk-button uk-visible-small">Categor&iacute;as </a></div>
+			
+			<!--<div class="uk-panel">-->
+            <div class="uk-width-3-10 uk-hidden-small">
+				<div class="uk-panel uk-panel-box uk-panel-header ">
                     <h3 class="uk-panel-title">Categor&iacute;as</h3>
                     <ul id="catmenu" class="uk-nav uk-nav-side">
                                 <!--{% for value in categs %}
@@ -78,7 +84,7 @@ session_start();
                 </div>-->
             </div>
 
-            <div class="uk-push-1-10 uk-width-4-10 uk-container-center" id="principal">
+            <div class=" uk-width-large-5-10 uk-width-medium-4-10 uk-width-small-1-1" id="principal">
                 <div class="camera_wrap camera_azure_skin" id="slider">
                     <div data-src="images/img1.jpg">
                         <div class="camera_caption fadeFromBottom">
@@ -93,16 +99,19 @@ session_start();
                 </div>
             </div>
             
-              <div class="uk-push-2-10 uk-width-2-10">
-                 <div class="uk-panel uk-panel-box">
-                    <h3 class="uk-panel-title">Secci&oacute;n</h3>
+            <div class=" uk-width-large-2-10 uk-width-medium-2-10 uk-width-small-1-1">
+                <div class="uk-panel uk-panel-box uk-panel-header">
+                    
+                    <h3 class="uk-panel-title">Populares</h3>
                     <ul class="uk-nav uk-nav-side">
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
+					<li><a>Item</a></li>
+					<li><a>Item</a></li>
+					<li><a>Item</a></li>
                     </ul>
                 </div>
             </div>
+			</div>
+			<!--</div>-->
         </div>
         
         
@@ -181,7 +190,6 @@ session_start();
         <script src="uikit/js/uikit.min.js"></script>
 		<script data-main="js/functions.js" src="js/require.js"></script>
         <script type='text/javascript' src='uikit/js/jquery.min.js'></script>
-       <!-- <script type='text/javascript' src='uikit/js/jquery.mobile.customized.min.js'></script>-->
         <script type='text/javascript' src='uikit/js/jquery.easing.1.3.js'></script> 
         <script type='text/javascript' src='uikit/js/camera.min.js'></script> 
         <script type='text/javascript' src='uikit/js/custom.js'></script>
