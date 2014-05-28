@@ -49,7 +49,7 @@ $(document).ready(function() {
                 success: function(data) {
                     if(data.result === "OK"){
 						alert("Registro exitoso -> Usuario: "+data.username);
-                        //window.location="index.php";
+                        window.location.href="index.php";
                         //location.reload();
                     }else{
 						if(data.result === 'FAIL REPASS'){
